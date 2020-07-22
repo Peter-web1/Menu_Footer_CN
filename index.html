@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Responsive Drop-down Menu Bar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="file:///E:/fontawesome/css/all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="file:///E:/jquery.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">CodingNepal</div>
+      <label for="btn" class="icon">
+        <span class="fa fa-bars"></span>
+      </label>
+      <input type="checkbox" id="btn">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li>
+          <label for="btn-1" class="show">Features +</label>
+          <a href="#">Features</a>
+          <input type="checkbox" id="btn-1">
+          <ul>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Elements</a></li>
+            <li><a href="#">Icons</a></li>
+          </ul>
+        </li>
+        <li>
+          <label for="btn-2" class="show">Services +</label>
+          <a href="#">Services</a>
+          <input type="checkbox" id="btn-2">
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">App Design</a></li>
+            <li>
+              <label for="btn-3" class="show">More +</label>
+              <a href="#">More <span class="fa fa-plus"></span></a>
+              <input type="checkbox" id="btn-3">
+              <ul>
+                <li><a href="#">Submenu-1</a></li>
+                <li><a href="#">Submenu-2</a></li>
+                <li><a href="#">Submenu-3</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="content0">
+      <header>Responsive Drop-down Menu Bar</header>
+      <p>HTML and CSS (Media Query)</p>
+    </div>
+
+
+    <div class="content1">
+        <div class="text">
+        Fully Responsive Footer Section</div>
+        <div class="p">
+        HTML and CSS (Flexbox)</div>
+      </div>
+  
+      <footer>
+  
+        <div class="main-content">
+  
+          <div class="left box">
+            <h2>About us</h2>
+            <div class="content">
+                <p>
+                Skollll3
+               is a YouTube channel where you can learn web designing, web development, ui/ux designing, html css tutorial, hover animation and effects, javascript and jquery tutorial and related so on.</p>
+                <div class="social">
+                          <a href="https://facebook.com/"><span class="fab fa-facebook-f"></span></a>
+                          <a href="#"><span class="fab fa-twitter"></span></a>
+                          <a href="https://instagram.com/"><span class="fab fa-instagram"></span></a>
+                          <a href="https://youtube.com/"><span class="fab fa-youtube"></span></a>
+                </div>
+            </div>
+          </div>
+  
+          <div class="center box">
+            <h2>Address</h2>
+            <div class="content">
+              <div class="place">
+                  <span class="fas fa-map-marker-alt"></span>
+                  <span class="text">Ukraina, Stats</span>
+              </div>
+              <div class="phone">
+                  <span class="fas fa-phone-alt"></span>
+                  <span class="text">+777-765432100</span>
+              </div>
+              <div class="email">
+                <span class="fas fa-envelope"></span>
+                <span class="text">abc@example.com</span>
+              </div>
+            </div>
+          </div>
+  
+          <div class="right box">
+            <h2>Contact us</h2>
+            <div class="content">
+              <form action="#">
+                <div class="email">
+                  <div class="text">Email *</div>
+                  <input type="email" required>
+                </div>
+                <div class="msg">
+                    <div class="text">Message *</div>
+                      <!-- NOTE: Due to more textarea tag I got an error. So I changed the textarea name to changeit. Please change that changeit name to textarea -->
+                    <textarea class="msgForm" rows="2" cols="25" required></textarea> <!-- replace this changeit name to textarea -->
+                              
+                    <br />
+                  <div class="btn">
+                    <button type="submit">Send</button>
+                  </div>
+                  <div class="bottom">
+                    <center>
+                      <span class="credit">Created By <a href="https://youtube.com">Skollll#</a> | </span>
+                      <span class="far fa-copyright"></span> 2020 All rights reserved.
+                    </center>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+
+    <script>
+      $('.icon').click(function(){
+        $('span').toggleClass("cancel");
+      });
+    </script>
+
+  </body>
+</html>
